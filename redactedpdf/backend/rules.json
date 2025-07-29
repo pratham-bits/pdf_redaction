@@ -1,0 +1,38 @@
+[
+  {
+    "rule_id": "aadhar",
+    "name": "Aadhar Number",
+    "pattern": "\\b\\d{4}[ -]?\\d{4}[ -]?\\d{4}\\b",
+    "replacement": "[AADHAR]"
+  },
+  {
+    "rule_id": "pan",
+    "name": "PAN Number",
+    "pattern": "\\b[A-Z]{5}\\d{4}[A-Z]{1}\\b",
+    "replacement": "[PAN]"
+  },
+  {
+    "rule_id": "phone_international",
+    "name": "International Phone Number",
+    "pattern": "(?:\\+?\\d{1,3}[-.\\s]?)?\\(?\\d{1,4}\\)?[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,9}\\b",
+    "replacement": "[PHONE]"
+  },
+  {
+    "rule_id": "date_extended",
+    "name": "Date Formats",
+    "pattern": "\\b(?:\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}|\\d{4}[/-]\\d{1,2}[/-]\\d{1,2}|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*[.,]? \\d{1,2},? \\d{4})\\b",
+    "replacement": "[DATE]"
+  },
+  {
+    "rule_id": "credit_card_enhanced",
+    "name": "Credit/Debit Card",
+    "pattern": "\\b(?:\\d[ -]*?){15,16}\\b",
+    "replacement": "[CARD]"
+  },
+  {
+    "rule_id": "email_extended",
+    "name": "Email Address",
+    "pattern": "\\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,20}\\b",
+    "replacement": "[EMAIL]"
+  }
+]
