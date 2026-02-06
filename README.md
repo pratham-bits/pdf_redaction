@@ -1,56 +1,47 @@
-## SecurePDF – Automated PII Redaction in PDFs
-SecurePDF is an AI-powered web application that automatically detects and redacts Personally Identifiable Information (PII) from PDF documents. It ensures privacy protection by intelligently identifying sensitive information using Natural Language Processing (NLP).
+SecurePDF – Automated PII Redaction in PDFs
+SecurePDF is an AI-powered web application that automatically detects and redacts Personally Identifiable Information (PII) from PDF documents. It ensures privacy protection by leveraging Natural Language Processing (NLP) to intelligently identify sensitive information and securely remove it.
 
--->Problem Statement
-Organizations frequently share documents containing sensitive information such as:
-Names
-Email addresses
-Phone numbers
-Aadhaar / PAN numbers
-Addresses
+🚩 Problem Statement
+Organizations often share documents containing sensitive data such as:
+- Names
+- Email addresses
+- Phone numbers
+- Aadhaar / PAN numbers
+- Physical addresses
 Manual redaction is:
-Time-consuming
-Error-prone
-Risky
+- ⏳ Time-consuming
+- ⚠️ Error-prone
+- 🔒 Risky
+SecurePDF automates this process, ensuring fast, reliable, and secure redaction.
 
-SecurePDF automates this process using AI to ensure fast and reliable redaction.
 🧠 Features
-✅ Automatic PII detection using NLP (spaCy)
-✅ Redaction of detected sensitive information
-✅ Upload and download PDF interface
-✅ FastAPI backend for efficient API handling
-✅ Clean React frontend for user interaction
-✅ Secure document processing
+- ✅ Automatic PII detection using spaCy NLP
+- ✅ Intelligent redaction of sensitive information
+- ✅ Upload & download interface for PDFs
+- ✅ FastAPI backend for efficient API handling
+- ✅ Clean React.js frontend for user interaction
+- ✅ Secure document processing pipeline
 
-**Tech Stack
-🔹 Backend
-Python
-FastAPI
-spaCy (NLP)
-PyMuPDF (fitz)
-🔹 Frontend
-React.js
-Axios
-HTML, CSS
-
-
-📂 Project Structure
-SecurePDF/
-│
-├── backend/
-│   ├── main.py
-│   ├── utils.py
-│   └── requirements.txt
-│
-├── frontend/
-│   ├── src/
-│   └── package.json
-│
-└── README.md
+🛠 Tech Stack
+Backend
+- Python
+- FastAPI
+- spaCy (NLP)
+- PyMuPDF (fitz)
+Frontend
+- React.js
+- Axios
+- HTML, CSS
 
 ⚙️ How It Works
-User uploads a PDF.
-Text is extracted using PyMuPDF.
-spaCy NLP model detects PII entities.
-Detected entities are automatically redacted.
-The redacted PDF is generated and returned to the user.
+- User uploads a PDF.
+- Text is extracted using PyMuPDF.
+- spaCy NLP model detects PII entities.
+- Detected entities are automatically redacted.
+- A secure, redacted PDF is generated and returned to the user.
+
+🚀 Future Enhancements
+- Support for additional file formats (Word, Excel)
+- Customizable redaction rules
+- Role-based access control for enterprise use
+- Integration with cloud storage (Google Drive, OneDrive)
